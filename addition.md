@@ -9,13 +9,13 @@
 * vc9, vc10에서는 확인했지만, vc7, vc8에서 기본 지원하는지 확인하지 못 했다.
 * gcc에서 어느 버전부터 지원하는지 확인하지 못 했다.
 
-## include <cstdint>와 #include <stdint.h>
+## cstdint 와 stdint.h
 
 * tr1에는 위 헤더에 기본 타입의 크기가 명확히 표시되어 있다.
 * tr1전의 std에서 확신할 수 있는 데이터 크기는 unsigned char이다.
 * 4Gbytes이상을 표시하기 위해 8바이트의 데이터 타입이 필요했다.
 * vc는 unsigned __int64를 지원하므로, 이것을 사용했다.
-* gcc는 확신할 수 없지만 #include <stdint.h>를 사용했다.
+* gcc는 확신할 수 없지만 stdint.h 를 사용했다.
 
 ## allocator
 
