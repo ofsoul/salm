@@ -202,11 +202,19 @@ BOOST_AUTO_TEST_CASE(NORMAL_TEST)
 {
 	const char *str = "ofsoul";	
 
-	rsa::generate_key ag(encode::rsa::_1024bit::KEY_BYTES);
-	crypto<encode::rsa::_1024bit> en(ag.public_key());
+	// 같은 생성기에서 생성한 키쌍이면 동작함을 보장
+	byte_array pub;
+	byte_array pri;
+	{
+		rsa::generate_key ag(encode::rsa::_1024bit::KEY_BYTES);
+		pub = ag.public_key();
+		pri = ag.private_key();
+	} //생성기가 해제된다.
+	
+	crypto<encode::rsa::_1024bit> en(pub);
 	byte_array encrypt_buf = en.execute((const unsigned char*)str, strlen(str));
 
-	crypto<decode::rsa::_1024bit> de(ag.private_key());		
+	crypto<decode::rsa::_1024bit> de(pri);		
 	byte_array decrypt_buf = de.execute(encrypt_buf);
 
 	BOOST_CHECK_EQUAL(std::string(str), salm::bytes_to_string(decrypt_buf));
