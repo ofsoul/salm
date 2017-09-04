@@ -1,40 +1,40 @@
 # Security Algorithms Module (SALM)
 
-## ¼Ò°³
+## ì†Œê°œ
 
-* Security Algorithms Module Àº ¿©·¯ ¾ÏÈ£È­ / ¾ĞÃà ¾Ë°í¸®ÁòÀ» µ¿ÀÏÇÑ ÀÎÅÍÆäÀÌ½º¸¦ ÅëÇØ Á¦°øÇÑ´Ù.
-* ¾ÏÈ£È­ / ¾ĞÃà ¾Ë°í¸®Áò¿¡ ´ëÇÑ Ãß°¡ÀûÀÎ ÇĞ½À¾øÀÌµµ ½±°Ô »ç¿ëÇÒ ¼ö ÀÖÀ¸¸ç, ´Ù¾çÇÑ ¾Ë°í¸®ÁòÀ» Á¦°øÇÑ´Ù.
+* Security Algorithms Module ì€ ì—¬ëŸ¬ ì•”í˜¸í™” / ì••ì¶• ì•Œê³ ë¦¬ì¦˜ì„ ë™ì¼í•œ ì¸í„°í˜ì´ìŠ¤ë¥¼ í†µí•´ ì œê³µí•œë‹¤.
+* ì•”í˜¸í™” / ì••ì¶• ì•Œê³ ë¦¬ì¦˜ì— ëŒ€í•œ ì¶”ê°€ì ì¸ í•™ìŠµì—†ì´ë„ ì‰½ê²Œ ì‚¬ìš©í•  ìˆ˜ ìˆìœ¼ë©°, ë‹¤ì–‘í•œ ì•Œê³ ë¦¬ì¦˜ì„ ì œê³µí•œë‹¤.
 
-## ½ÇÇà ¹× ºôµå È¯°æ
+## ì‹¤í–‰ ë° ë¹Œë“œ í™˜ê²½
 
-* Windows XP sp3 ÀÌ»ó (Win32 È¯°æ)
-* Visual Studio 2008, 2010 C++ ¿¡¼­ Å×½ºÆ®
-* zlib-1.2.5(¼Ò½º Æ÷ÇÔµÇ¾î ÀÖÀ½)
-* Boost 1.47.0, 1.51.0¿¡¼­ Å×½ºÆ®(unittest ½ÇÇà½Ã ÇÊ¿ä, SALM ¶óÀÌºê·¯¸®¿Í´Â ¹«°ü)
-* openssl-1.0.1c(¶óÀÌºê·¯¸® Æ÷ÇÔµÇ¾î ÀÖÀ½)
+* Windows XP sp3 ì´ìƒ (Win32 í™˜ê²½)
+* Visual Studio 2008, 2010 C++ ì—ì„œ í…ŒìŠ¤íŠ¸
+* zlib-1.2.5(ì†ŒìŠ¤ í¬í•¨ë˜ì–´ ìˆìŒ)
+* Boost 1.47.0, 1.51.0ì—ì„œ í…ŒìŠ¤íŠ¸(unittest ì‹¤í–‰ì‹œ í•„ìš”, SALM ë¼ì´ë¸ŒëŸ¬ë¦¬ì™€ëŠ” ë¬´ê´€)
+* openssl-1.0.1c(ë¼ì´ë¸ŒëŸ¬ë¦¬ í¬í•¨ë˜ì–´ ìˆìŒ)
 
-## ±¸¼º¿ä¼Ò
+## êµ¬ì„±ìš”ì†Œ
 
-¾ÏÈ£È­ ¹æ½Ä¿¡ µû¶ó 3°¡Áö·Î ±¸¼ºµÇ¾î ÀÖÀ¸¸ç, Ãß°¡·Î ¾ĞÃà ¾Ë°í¸®ÁòÀ» Á¦°øÇÑ´Ù.
-* Asymmetrics  : ºñ´ëÄªÅ° ¾Ë°í¸®Áò ¸ğÀ½
-* Ciphers      : ´ëÄªÅ° ¾Ë°í¸®Áò ¸ğÀ½
-* Digests      : ¸Ş½ÃÁö ´ÙÀÌÁ¦½ºÆ® ¾Ë°í¸®Áò ¸ğÀ½
-* Compressions : ¾ĞÃà ¾Ë°í¸®Áò ¸ğÀ½ 
-* transforms   : µ¥ÀÌÅÍ º¯È¯ ¾Ë°í¸®Áò ¸ğÀ½ 
+ì•”í˜¸í™” ë°©ì‹ì— ë”°ë¼ 3ê°€ì§€ë¡œ êµ¬ì„±ë˜ì–´ ìˆìœ¼ë©°, ì¶”ê°€ë¡œ ì••ì¶• ì•Œê³ ë¦¬ì¦˜ì„ ì œê³µí•œë‹¤.
+* Asymmetrics  : ë¹„ëŒ€ì¹­í‚¤ ì•Œê³ ë¦¬ì¦˜ ëª¨ìŒ
+* Ciphers      : ëŒ€ì¹­í‚¤ ì•Œê³ ë¦¬ì¦˜ ëª¨ìŒ
+* Digests      : ë©”ì‹œì§€ ë‹¤ì´ì œìŠ¤íŠ¸ ì•Œê³ ë¦¬ì¦˜ ëª¨ìŒ
+* Compressions : ì••ì¶• ì•Œê³ ë¦¬ì¦˜ ëª¨ìŒ 
+* transforms   : ë°ì´í„° ë³€í™˜ ì•Œê³ ë¦¬ì¦˜ ëª¨ìŒ 
 
-## ¼º´Éºñ±³
+## ì„±ëŠ¥ë¹„êµ
 
-¾ÏÈ£È­ ¾Ë°í¸®Áòº° ¼º´ÉÅ×½ºÆ® : http://www.cryptopp.com/benchmarks.html
+ì•”í˜¸í™” ì•Œê³ ë¦¬ì¦˜ë³„ ì„±ëŠ¥í…ŒìŠ¤íŠ¸ : http://www.cryptopp.com/benchmarks.html
 
-## Å×½ºÆ®
+## í…ŒìŠ¤íŠ¸
 
-* ÁÖ°í¹ŞÀº ÆĞÅ¶¿¡ ÀÌ»óÀÌ ¾øÀ»½Ã ÀÀ´ä½Ã°£À» Âï¾î ¹®Á¦°¡ ¹ß»ıÇÏ´ÂÁö Ã¼Å©Çß´Ù.
-* C# .net 4.0¿¡¼­ Á¦°øÇÏ´Â ¾Ë°í¸®ÁòÀ¸·Î ¾ÏÈ£È­ÈÄ ¹ÙÀÌ³Ê¸®°ªÀ» ºñ±³ÇÏ¿´´Ù.
-* Boost Å×½ºÆ® ÄÚµå¸¦ ½ÇÇàÇÏ·Á¸é, boost unittest Çì´õ¿Í ¶óÀÌºê·¯¸®¸¦ ¸µÅ©ÇØ¾ß ÇÑ´Ù.
+* ì£¼ê³ ë°›ì€ íŒ¨í‚·ì— ì´ìƒì´ ì—†ì„ì‹œ ì‘ë‹µì‹œê°„ì„ ì°ì–´ ë¬¸ì œê°€ ë°œìƒí•˜ëŠ”ì§€ ì²´í¬í–ˆë‹¤.
+* C# .net 4.0ì—ì„œ ì œê³µí•˜ëŠ” ì•Œê³ ë¦¬ì¦˜ìœ¼ë¡œ ì•”í˜¸í™”í›„ ë°”ì´ë„ˆë¦¬ê°’ì„ ë¹„êµí•˜ì˜€ë‹¤.
+* Boost í…ŒìŠ¤íŠ¸ ì½”ë“œë¥¼ ì‹¤í–‰í•˜ë ¤ë©´, boost unittest í—¤ë”ì™€ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë§í¬í•´ì•¼ í•œë‹¤.
 
 ![screenshot](https://github.com/ofsoul/SALM/raw/master/sosemanuk_2hour_test.png)
 
-## »ç¿ë¹æ¹ı
+## ì‚¬ìš©ë°©ë²•
 
 	const char *plantext = "12345678";
 
@@ -45,142 +45,22 @@
 	crypto<decode::aes::_OFB128bit> de(key);
 	byte_array decrypt = de.execute(encrypt);
 
-## ±×¿Ü
+## ê·¸ì™¸
 
-* »ç¿ëÀÚ ÇÊ¿ä¿¡ µû¶ó ºÎºĞ ºôµåÇÒ ¼ö ÀÖµµ·Ï, Çì´õ ¹× ¼Ò½º·Î¸¸ Á¦°øµÇ´Â °ÍÀ» ¸ñÇ¥·Î ÇÑ´Ù.(opensslÀ» Á¦¿ÜÇÒ °ÍÀÌ´Ù.)
-* opensslÀÇ x64 libeay32.lib¸¦ ºôµåÇÒ ¼ö ¾ø¾ú´Ù. ³ª¸ÓÁö ÄÚµå´Â x64·Î ºôµå °¡´ÉÇÏÁö¸¸, ½ÇÇàÀº º¸ÀåÇÒ ¼ö ¾ø´Ù.
-* cmake¸¦ ÅëÇØ ¸ÖÆ¼ ÇÃ·¡ÆûÀ» Áö¿øÇÒ °ÍÀÌ´Ù.(gcc)
-* C++0xÀº ±ÇÀå»çÇ×ÀÌÁö¸¸, std¸¦ Áö¿øÇÒ °æ¿ì »ç¿ëÇÒ ¼ö ÀÖµµ·Ï ÇÒ °ÍÀÌ´Ù.
-* byte_array¸¦ À§ÇÑ ¾²·¹µå ¼¼ÀÌÇÁÇÑ allocator(°¡º¯ ¸Ş¸ğ¸®Ç®)°¡ ÇÊ¿äÇÏ´Ù. Ãß°¡ÇÒ °ÍÀÌ´Ù.
-* dllÀ» Áö¿øÇÏÁö ¾Ê´Â´Ù. boost xml°°Àº °æ·®ÀÇ ÄÚµå¸¦ ÁöÇâÇÏ±â ¶§¹®ÀÌ´Ù.
+* ì‚¬ìš©ì í•„ìš”ì— ë”°ë¼ ë¶€ë¶„ ë¹Œë“œí•  ìˆ˜ ìˆë„ë¡, í—¤ë” ë° ì†ŒìŠ¤ë¡œë§Œ ì œê³µë˜ëŠ” ê²ƒì„ ëª©í‘œë¡œ í•œë‹¤.(opensslì„ ì œì™¸í•  ê²ƒì´ë‹¤.)
+* opensslì˜ x64 libeay32.libë¥¼ ë¹Œë“œí•  ìˆ˜ ì—†ì—ˆë‹¤. ë‚˜ë¨¸ì§€ ì½”ë“œëŠ” x64ë¡œ ë¹Œë“œ ê°€ëŠ¥í•˜ì§€ë§Œ, ì‹¤í–‰ì€ ë³´ì¥í•  ìˆ˜ ì—†ë‹¤.
+* cmakeë¥¼ í†µí•´ ë©€í‹° í”Œë˜í¼ì„ ì§€ì›í•  ê²ƒì´ë‹¤.(gcc)
+* C++0xì€ ê¶Œì¥ì‚¬í•­ì´ì§€ë§Œ, stdë¥¼ ì§€ì›í•  ê²½ìš° ì‚¬ìš©í•  ìˆ˜ ìˆë„ë¡ í•  ê²ƒì´ë‹¤.
+* byte_arrayë¥¼ ìœ„í•œ ì“°ë ˆë“œ ì„¸ì´í”„í•œ allocator(ê°€ë³€ ë©”ëª¨ë¦¬í’€)ê°€ í•„ìš”í•˜ë‹¤. ì¶”ê°€í•  ê²ƒì´ë‹¤.
+* dllì„ ì§€ì›í•˜ì§€ ì•ŠëŠ”ë‹¤. boost xmlê°™ì€ ê²½ëŸ‰ì˜ ì½”ë“œë¥¼ ì§€í–¥í•˜ê¸° ë•Œë¬¸ì´ë‹¤.
 
-## ¶óÀÌ¼¾½º
+## ìƒˆ ì‘ì—…ì‹œì‘
 
-¿ÀÇÂ ¼Ò½ºÀÌ´Ù. ¸¶À½´ë·Î »ç¿ë°¡´ÉÇÏÁö¸¸, ¾ÆÁ÷Àº opensslÀ» »ç¿ëÇÏ±â¶§¹®¿¡ ´ÙÀ½ÀÌ Àû¿ëµÈ´Ù.
+* cx11ì— ë§ì¶° ì½”ë“œ ìˆ˜ì •
+* ì½”ë“œ ìˆ˜ì¤€ì—ì„œ ë¹Œë“œ ê°€ëŠ¥í•˜ê²Œ openssl ì œê±°(ì½”ë“œë¥¼ ì œê³µí•˜ëŠ” cë¼ì´ë¸ŒëŸ¬ë¦¬ ë³€ê²½)
+ - https://github.com/libtom/libtomcrypt
+* ì¸í„°í˜ì´ìŠ¤ ì§ê´€ì ì´ê²Œ ìˆ˜ì •
 
-License
+## ë¼ì´ì„¼ìŠ¤
 
-This is a copy of the current LICENSE file inside the CVS repository.
-
-  LICENSE ISSUES
-
-  The OpenSSL toolkit stays under a dual license, i.e. both the conditions of
-  the OpenSSL License and the original SSLeay license apply to the toolkit.
-  See below for the actual license texts. Actually both licenses are BSD-style
-  Open Source licenses. In case of any license issues related to OpenSSL
-  please contact openssl-core@openssl.org.
-
-  OpenSSL License
-
-/* ====================================================================
- * Copyright (c) 1998-2011 The OpenSSL Project.  All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in
- *    the documentation and/or other materials provided with the
- *    distribution.
- *
- * 3. All advertising materials mentioning features or use of this
- *    software must display the following acknowledgment:
- *    "This product includes software developed by the OpenSSL Project
- *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
- *
- * 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
- *    endorse or promote products derived from this software without
- *    prior written permission. For written permission, please contact
- *    openssl-core@openssl.org.
- *
- * 5. Products derived from this software may not be called "OpenSSL"
- *    nor may "OpenSSL" appear in their names without prior written
- *    permission of the OpenSSL Project.
- *
- * 6. Redistributions of any form whatsoever must retain the following
- *    acknowledgment:
- *    "This product includes software developed by the OpenSSL Project
- *    for use in the OpenSSL Toolkit (http://www.openssl.org/)"
- *
- * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
- * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
- * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
- * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
- * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- * OF THE POSSIBILITY OF SUCH DAMAGE.
- * ====================================================================
- *
- * This product includes cryptographic software written by Eric Young
- * (eay@cryptsoft.com).  This product includes software written by Tim
- * Hudson (tjh@cryptsoft.com).
- *
- */
-
- Original SSLeay License
-
-/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
- * All rights reserved.
- *
- * This package is an SSL implementation written
- * by Eric Young (eay@cryptsoft.com).
- * The implementation was written so as to conform with Netscapes SSL.
- *
- * This library is free for commercial and non-commercial use as long as
- * the following conditions are aheared to.  The following conditions
- * apply to all code found in this distribution, be it the RC4, RSA,
- * lhash, DES, etc., code; not just the SSL code.  The SSL documentation
- * included with this distribution is covered by the same copyright terms
- * except that the holder is Tim Hudson (tjh@cryptsoft.com).
- *
- * Copyright remains Eric Young's, and as such any Copyright notices in
- * the code are not to be removed.
- * If this package is used in a product, Eric Young should be given attribution
- * as the author of the parts of the library used.
- * This can be in the form of a textual message at program startup or
- * in documentation (online or textual) provided with the package.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. All advertising materials mentioning features or use of this software
- *    must display the following acknowledgement:
- *    "This product includes cryptographic software written by
- *     Eric Young (eay@cryptsoft.com)"
- *    The word 'cryptographic' can be left out if the rouines from the library
- *    being used are not cryptographic related :-).
- * 4. If you include any Windows specific code (or a derivative thereof) from
- *    the apps directory (application code) you must include an acknowledgement:
- *    "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
- *
- * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
- * SUCH DAMAGE.
- *
- * The licence and distribution terms for any publically available version or
- * derivative of this code cannot be changed.  i.e. this code cannot simply be
- * copied and put under another distribution licence
- * [including the GNU Public Licence.]
- */
+ì˜¤í”ˆ ì†ŒìŠ¤ì´ë‹¤. ë§ˆìŒëŒ€ë¡œ ì‚¬ìš©ê°€ëŠ¥í•˜ì§€ë§Œ, ì•„ì§ì€ opensslì„ ì‚¬ìš©í•˜ê¸°ë•Œë¬¸ì— ë‹¤ìŒì´ ì ìš©ëœë‹¤.
